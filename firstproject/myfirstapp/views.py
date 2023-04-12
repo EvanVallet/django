@@ -10,3 +10,4 @@ def formulaire(request):
 def Bonjour(request):
     nom = request.GET["nom"]
     return render(request, 'myfirstapp/Bonjour.html',{"nom":nom})
+
