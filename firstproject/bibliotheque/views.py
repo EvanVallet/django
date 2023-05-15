@@ -37,5 +37,5 @@ def traitementupdate(request, id):
         return render(request, "bibliotheque/update.html", {"form": lform, "id": id})
 
 def bibliotheque(request):
-    livre = models.Livre.object.all()
+    livre = models.Livre.objects.all()
     return render(request,"bibliotheque/bibliotheque.html",{"livre":livre})
